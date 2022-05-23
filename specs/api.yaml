@@ -35,7 +35,24 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/EmployeesResponse'
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: Employees's identifier
+                      example: "1"
+                    name:
+                      type: string
+                      description: Employees's name
+                      example: Pedro
+                    role:
+                      type: string
+                      description: Employees's role
+                      example: admin
+
+
 components:
   schemas:
     CreateEmployeeRequest:
