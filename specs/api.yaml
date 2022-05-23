@@ -41,13 +41,13 @@ components:
     CreateEmployeeRequest:
       title: CreateEmployeeResponse
       required:
-        - employeename
+        - name
         - role
       type: object
       properties:
-        employeename:
+        name:
           type: string
-          description: Employees's employeename
+          description: Employees's name
           example: Juan
         role:
           type: string
@@ -57,17 +57,21 @@ components:
       title: EmployeeResponse
       required:
         - id
-        - employeename
+        - name
       type: object
       properties:
         id:
           type: string
           description: Employees's identifier
           example: "1"
-        employeename:
+        name:
           type: string
-          description: Employees's employeename
+          description: Employees's name
           example: Pedro
+        role:
+          type: string
+          description: Employees's role
+          example: admin
     EmployeesResponse:
       title: EmployeesResponse
       type: array
@@ -78,9 +82,9 @@ components:
             type: string
             description: Employees's identifier
             example: "1"
-          employeename:
+          name:
             type: string
-            description: Employees's employeename
+            description: Employees's name
             example: Pedro
           role:
             type: string
