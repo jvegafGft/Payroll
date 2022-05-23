@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.7.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'org.openapi.generator' version '5.3.0'
 }
 
 group = 'com.gft.jvegaf'
@@ -21,4 +22,16 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+openApiGenerate {
+    generatorName = 'spring'
+    inputSpec = "$rootDir/specs/api.yaml".toString()
+    outputDir = "$buildDir/src/main/java".toString()
+    apiPackage = "com.gft.jvegaf.payroll"
+    invokerPackage = "com.gft.jvegaf.payroll"
+    modelPackage = "com.gft.jvegaf.payroll"
+    configOptions = [
+            dateLibrary: "java8"
+    ]
 }
