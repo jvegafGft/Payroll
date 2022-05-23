@@ -15,3 +15,18 @@ Content-Type: application/json
   "role": "admin"
 }
 
+### Send PUT request with json body
+PUT http://localhost:8080/employees/2
+Content-Type: application/json
+
+{
+  "name": "Carlos",
+  "role": "barman"
+}
+
+
+### Send DELETE request with json body
+DELETE http://localhost:8080/employees/3
+
+
+
