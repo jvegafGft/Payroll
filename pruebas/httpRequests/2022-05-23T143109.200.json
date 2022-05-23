@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Bilbo Baggins",
+    "role": "burglar"
+  },
+  {
+    "id": 2,
+    "name": "Frodo Baggins",
+    "role": "thief"
+  },
+  {
+    "id": 3,
+    "name": "Pedro",
+    "role": "admin"
+  }
+]

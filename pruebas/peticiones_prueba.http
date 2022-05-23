@@ -1,0 +1,17 @@
+### GET request with a header
+GET http://localhost:8080/employees
+Accept: application/json
+
+### GET request with a parameter
+GET http://localhost:8080/employees/1
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "role": "admin"
+}
+
