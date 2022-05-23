@@ -1,0 +1,61 @@
+openapi: "3.0.3"
+info:
+  title: "Payroll API"
+  description: "Payroll API"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8080"
+paths:
+  /employees:
+    get:
+      summary: "GET employees"
+      operationId: "all"
+      responses:
+        "200":
+          description: "OK"
+    post:
+      summary: "POST employees"
+      operationId: "newEmployee"
+      responses:
+        "200":
+          description: "OK"
+  /employees/{id}:
+    get:
+      summary: "GET employees/{id}"
+      operationId: "one"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "number"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+    put:
+      summary: "PUT employees/{id}"
+      operationId: "replaceEmployee"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "number"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
+    delete:
+      summary: "DELETE employees/{id}"
+      operationId: "deleteEmployee"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          schema:
+            type: "number"
+            format: "int64"
+      responses:
+        "200":
+          description: "OK"
