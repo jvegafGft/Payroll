@@ -1,17 +1,14 @@
 package com.gft.jvegaf.payroll;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name= "CUSTOMER_ORDER")
+@Table(name = "CUSTOMER_ORDER")
 public class Order {
-  private @Id @GeneratedValue Long Id;
-  private String description;
-  private Status status;
+  private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long   Id;
+  private                                                         String description;
+  private                                                         Status status;
 
   public Order() {}
 

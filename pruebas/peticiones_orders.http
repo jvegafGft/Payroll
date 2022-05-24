@@ -11,17 +11,17 @@ POST http://localhost:8080/orders
 Content-Type: application/json
 
 {
-  "status": "Ivan",
-  "description": "admin"
+  "status": "IN_PROGRESS",
+  "description": "PANTALLA DELL"
 }
 
 ### Send PUT request with json body
-PUT http://localhost:8080/orders/2
+PUT http://localhost:8080/orders/1
 Content-Type: application/json
 
 {
-  "name": "Carlos",
-  "role": "barman"
+  "status": "IN_PROGRESS",
+  "description": "batamanta"
 }
 
 

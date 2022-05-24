@@ -1,0 +1,211 @@
+GET http://localhost:8080/orders
+Accept: application/json
+
+<> 2022-05-24T150333.200.json
+
+###
+
+PUT http://localhost:8080/orders/1
+Content-Type: application/json
+
+{
+  "status": "IN_PROGRESS",
+  "description": "batamanta"
+}
+
+<> 2022-05-24T150324.201.json
+
+###
+
+PUT http://localhost:8080/orders/3
+Content-Type: application/json
+
+{
+  "status": "IN_PROGRESS",
+  "description": "batamanta"
+}
+
+<> 2022-05-24T145314.201.json
+
+###
+
+GET http://localhost:8080/orders
+Accept: application/json
+
+<> 2022-05-24T145135.200.json
+
+###
+
+PUT http://localhost:8080/orders/1
+Content-Type: application/json
+
+{
+  "status": "IN_PROGRESS",
+  "description": "batamanta"
+}
+
+<> 2022-05-24T145125.201.json
+
+###
+
+PUT http://localhost:8080/orders/1
+Content-Type: application/json
+
+{
+  "status": "COMPLETED",
+  "description": "batamanta"
+}
+
+<> 2022-05-24T145043.201.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "status": "NO_PROGRESS",
+  "description": "PANTALLA DELL"
+}
+
+<> 2022-05-24T144931.400.json
+
+###
+
+GET http://localhost:8080/orders
+Accept: application/json
+
+<> 2022-05-24T144737.200.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "status": "IN_PROGRESS",
+  "description": "PANTALLA DELL"
+}
+
+<> 2022-05-24T144726.200.json
+
+###
+
+GET http://localhost:8080/orders/1
+Accept: application/json
+
+<> 2022-05-24T144553.500.json
+
+###
+
+GET http://localhost:8080/orders
+Accept: application/json
+
+<> 2022-05-24T144534.200.json
+
+###
+
+GET http://localhost:8080/orders
+Accept: application/json
+
+###
+
+GET http://localhost:8080/orders/1
+Accept: application/json
+
+<> 2022-05-24T143429.500.json
+
+###
+
+GET http://localhost:8080/orders/1
+Accept: application/json
+
+<> 2022-05-24T143351.500.json
+
+###
+
+GET http://localhost:8080/employees
+Accept: application/json
+
+<> 2022-05-23T144827.200.json
+
+###
+
+DELETE http://localhost:8080/employees/3
+
+###
+
+GET http://localhost:8080/employees
+Accept: application/json
+
+<> 2022-05-23T143655.200.json
+
+###
+
+PUT http://localhost:8080/employees/2
+Content-Type: application/json
+
+{
+  "name": "Carlos",
+  "role": "barman"
+}
+
+<> 2022-05-23T143640.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "role": "admin"
+}
+
+<> 2022-05-23T143131.200.json
+
+###
+
+GET http://localhost:8080/employees
+Accept: application/json
+
+<> 2022-05-23T143109.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "name": "Pedro",
+  "role": "admin"
+}
+
+<> 2022-05-23T143101.200.json
+
+###
+
+GET http://localhost:8080/employees/1
+Accept: application/json
+
+<> 2022-05-23T143051.200.json
+
+###
+
+GET https://localhost:8080/employees/1
+Accept: application/json
+
+###
+
+GET http://localhost:8080/employees
+Accept: application/json
+
+<> 2022-05-23T143025.200.json
+
+###
+
+GET https://localhost:8080/employees
+Accept: application/json
+
+###
+

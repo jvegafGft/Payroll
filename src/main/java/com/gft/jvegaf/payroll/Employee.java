@@ -1,18 +1,17 @@
 package com.gft.jvegaf.payroll;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@Table(name = "EMPLOYEE")
 class Employee {
-  private @Id @GeneratedValue Long   id;
-  private                     String name;
-  private                     String role;
+  private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long   id;
+  private                                                         String name;
+  private                                                         String role;
 
-  public Employee() { }
+  public Employee() {}
 
   public Employee(String name, String role) {
     this.name = name;
