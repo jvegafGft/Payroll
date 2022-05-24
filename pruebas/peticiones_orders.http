@@ -1,0 +1,32 @@
+### GET request with a header
+GET http://localhost:8080/orders
+Accept: application/json
+
+### GET request with a parameter
+GET http://localhost:8080/orders/1
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "status": "Ivan",
+  "description": "admin"
+}
+
+### Send PUT request with json body
+PUT http://localhost:8080/orders/2
+Content-Type: application/json
+
+{
+  "name": "Carlos",
+  "role": "barman"
+}
+
+
+### Send DELETE request with json body
+DELETE http://localhost:8080/orders/3
+
+
+
